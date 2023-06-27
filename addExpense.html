@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Expense Tracker</h1>
+  </header>
+  <main>
+    <div class="expense-form">
+      <h2>Add Expense</h2>
+      <form>
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" placeholder="Enter amount" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <input type="text" id="description" placeholder="Enter description" required>
+        </div>
+        <div class="form-group">
+          <label for="category">Category:</label>
+          <select id="category" required>
+            <option value="" selected disabled>Select category</option>
+            <option value="groceries">Groceries</option>
+            <option value="transportation">Transportation</option>
+            <option value="entertainment">Entertainment</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+        <button type="submit">Add Expense</button>
+      </form>
+    </div>
+    <div class="expense-list">
+      <h2>Expense List</h2>
+      <ul>
+        <!-- Display the list of expenses dynamically using JavaScript -->
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Expense Tracker</p>
+  </footer>
+</body>
+</html>
